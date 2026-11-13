@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #d4f0fc;
+    --color-secondary: #01303f;
+    --color-accent: #02a9f7;
+    --font-outfit: "Outfit", sans-serif;
+}
+
+/*btransparent scroll track class called hide-scroll-track*/
+.hide-scroll-track::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+.hide-scroll-track::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.hide-scroll-track::-webkit-scrollbar-thumb {
+    background-color: #02a9f7;
+    border-radius: 20px;
+    border: 3px solid transparent;
+
+}
+
+/* ── Print styles for Invoice ── */
+@media print {
+    .print\:hidden {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+    }
+
+    nav {
+        display: none !important;
+    }
+}
